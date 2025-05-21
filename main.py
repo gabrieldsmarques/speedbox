@@ -12,6 +12,7 @@ entregas = []
 
 def carregar_dados_iniciais():
     
+    
     clientes.append(Cliente(1, "Joana Prado", "joana@email.com", "Rua das Flores, 100"))
     clientes.append(Cliente(2, "Carlos Menezes", "carlos@email.com", "Av. Brasil, 2000"))
 

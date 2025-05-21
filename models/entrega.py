@@ -1,4 +1,3 @@
-from typing import List
 from models.movimentacao import Movimentacao
 
 class Entrega:
@@ -9,7 +8,7 @@ class Entrega:
         self.origem = origem
         self.destino = destino
         self.status = 'Pendente'
-        self.historico_movimentacao: List[Movimentacao] = []
+        self.historico_movimentacao = []
 
     def calcular_tempo_estimado(self, distancia: float) -> float:
         return distancia / self.entregador.meio_transporte.velocidade_media
